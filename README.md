@@ -8,7 +8,7 @@ A small framework for extracting, translating/localizing, regenerating assets (t
 ## Repository Structure
 
 ```text
-nastyaye/
+localizerAI/
 ├── agent/
 │   └── localizer_agent.py
 ├── input_data/
