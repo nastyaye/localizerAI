@@ -51,16 +51,16 @@ pip install -r requirements.txt
 Usage
 
 1. Prepare your raw build
-2. 
+
 Build your site (e.g. npm run build) and copy the resulting static files into
 input_data-localized-<region>/01_raw/.
-3. Run the extractor
+2. Run the extractor
  ```
 python extractor.py
 ```
 This will generate 02_extracted/extracted_entries.json and pull out media into 04_images/ & 05_videos/.
 
-5. Localize everything
+3. Localize everything
  ```
 python main.py /path/to/input_data-localized-<region> <Locale>
 ```
@@ -69,7 +69,7 @@ Text translation via GPT
 Image regeneration
 Video dubbing and writes 03_translated/translated_entries.json.
 
-7. Rebuild the final site
+4. Rebuild the final site
 ```
 python packager/reconstructor.py \
   --project_root /path/to/input_data-localized-<region> \
